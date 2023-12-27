@@ -1,6 +1,9 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
 
+import foxbotIconURL from './foxbot/foxbot.png';
+import foxbotInsetIconURL from './foxbot/foxbot-small.svg';
+
 import musicIconURL from './music/music.png';
 import musicInsetIconURL from './music/music-small.svg';
 
@@ -47,6 +50,26 @@ import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
 export default [
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="Foxbot"
+                description="Name for the 'Foxbot' extension"
+                id="gui.extension.foxbot.name"
+            />
+        ),
+        extensionId: 'foxbot',
+        iconURL: foxbotIconURL,
+        insetIconURL: foxbotInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Play with Foxbot"
+                description="Description for the 'Foxbot' extension"
+                id="gui.extension.foxbot.description"
+            />
+        ),
+        featured: true
+    },
     {
         name: (
             <FormattedMessage
